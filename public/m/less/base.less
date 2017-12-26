@@ -1,0 +1,70 @@
+/*初始化*/
+@main-color: #006699;
+
+img {
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/*公共区域*/
+
+#header {
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    background-color: @main-color;
+    color: #fff;
+    text-align: center;
+    z-index: 999;
+    >h4 {
+        line-height: 45px;
+        font-weight: normal;
+        
+    }
+    .fa-search {
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 14px;
+    }
+}
+#footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: @main-color;
+    height: 50px;
+    bottom: 0;
+    z-index: 999;
+    .mui-row {
+        >div {
+            >a {
+                color: #fff;
+                font-size: 14px;
+                display: block;
+                text-align: center;
+                padding: 11px;
+                &::before {
+                    display: block;
+                    font-size: 16px;
+                }
+                &.active {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+html,body {
+    height: 100%;
+}
+#main {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    height: 100%;
+    background-color: #fff;
+}
